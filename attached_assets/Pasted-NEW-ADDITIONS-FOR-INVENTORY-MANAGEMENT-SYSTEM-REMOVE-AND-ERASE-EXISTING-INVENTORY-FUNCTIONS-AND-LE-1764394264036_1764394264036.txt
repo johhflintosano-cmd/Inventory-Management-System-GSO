@@ -1,0 +1,42 @@
+NEW ADDITIONS FOR INVENTORY MANAGEMENT SYSTEM:
+REMOVE AND ERASE EXISTING INVENTORY FUNCTIONS AND LETS START A NEW and thge (make sure to remove all mockups eg, buttons, names, frontend) ALSO REMOVED SUBCATEGORY FUNCTION.
+before actions show me checklisty of actions and i will say proceed of all of them are correct:
+CONTEXT EXPECTED FUNCTION OF SYSTEM: 
+
+WHEN ITEM COMES IN INVENTORY: 
+
+Employee(add new items and or increase numbers)-> to Admin who will "APPROVE" or "DENY" item information, addition, or changes 
+-> (IF APPROVED BY ADMIN) it will become official data redirected to db and tracked shown on frontend-> (Information of all items "just added" all at the same time by EMPLOYEE that
+were APPROVED by Admin, NOW RECORDED IN BOTH DB AND FRONTEND) will be genereted to an excel template (template will be given later and when given, go to the EXACT format of fonts and editation of said template)
+ in the "generate report function" called "RECEIVING REPORT"-> and those new information added and now fixed in the template will be prepared for printing or transfer them to excel with template with new information added by employee that was approved by admin.
+
+Summary of these function: Employee add new inventory Items or Does changes-> Actions made by Employee needs approval from ADMIN to actually inter data in the system-> IF APPROVED it will be added to system-> APPROVED actions for inventory items will go to "RECIEVING RECEIPT" EXCEL Template
+-> will be generated in excel with direct printing function.
+
+SYSTEM FUNCTIONS NEEDED:
+
+(PLEASE MAKE SURE TO ADD THESE AND make sure logic follows what was expected (routes,redirection, and if its being tracked in db and in frontend)
+
+1.Information to fill in by both EMPLOYEE AND ADMIN: SUPPLIER,DATE(AUTOMATICALLY SHOULD BE DETECTED BY SYSTEM- IF NOT ADD DETECTION OF DATE), QUANTITY (NUMBER OF ITEMS|unit of measure), ITEMS DELIVERED, LOCATION, UNIT COST, AMOUNT, REMARKS.
+
+Have an option to: Add 1 Item or ADD BULK.
+If these things are added- auto categorized them using word detection(HAS TO BE EXACT WORD FOR WORD that means give them the option to auto fill the possible preexisting word that is already registered as an offical category by system to actually match  that preexisting category- but if they dont want it to match- then proceed to function2) 
+and make it editable for additions or changes still (ofcours for employee it needs approval before managing change)) FUNCTION 2: AND IF- an item doesnt match preexisting item from word detection, auto create new category of said item (FOR ADMIN= IMMEDIETTE ACCES, FOR EMPLOYEE NEEDS APPROVAL BEFORE SYSTEM ACCEPTS)
+
+CONTEXT FOR ADD "BULK" input: according to our client, their employee must report what they bought/purchased that day. Meaning to say theres a high change theres a lot of ITEMS added and different from each other
+WHEN SYSTEM ACCEPTS NEW INFO/DATA FROM EMPLOYEE_ APPROVED BY ADMIN and the data is in "bulk" have the interface or ui for input items have columns for input downward like excel (QUANTITY (NUMBER OF ITEMS|unit of measure), ITEMS DELIVERED, LOCATION, UNIT COST, AMOUNT, REMARKS.)
+
+FOR "QUANTITY (NUMBER OF ITEMS|unit of measure), ITEMS DELIVERED, LOCATION, UNIT COST, AMOUNT, REMARKS" In the "bulk" report function make sure have the option for the user to have the "location" be auto filled if inputed at first column already (but remember to not seperate category despite different locations of the said item, only when they match "ITEMS DELIVERED" can they be inputted as the "SAME CATEGORY".
+
+and when employee completes the bulk input- they click on "ADD ALL ITEMS" and auto add: IF PREEXISTING= add number and "History" to existing category. IF NO CATGEORY CREATED YET FOR SAID ITEM= Add new category.
+
+AGAIN: CHANGES AND ADDITIONS OF "EMPLOYEE" NEEDS APPROVAL FROM ADMIN FIRST BEFORE SYSTEM TAKES IT ALL EITHER 1 ADDED ITEM OR BULK ITEMS.
+
+and IF bulk items are inputted from employee-> to admin notifaction, the approval and deny will look like a checklist list- and an item within the bulk is denied give the buttons scroll down option with reasons like (wrong= item name, location, quantity, unit of measure,unit cost, amount) but IF ADMIN APPROVED AN ITEM IN BULK or ONE ITEM ADD= SYSTEM DB SHALL TAKE IT ANMD FRONT END SHALL FOLLOW THROUGH>
+
+
+Also in the AMOUNT and UNIT cost: make a system that auto estimates what was inputted from bulk or from 1 item added, when in adding bulk and when they inputting items- auto calculate on the colum of the AMOUNT so they can just click it to complete input.
+
+and in CATEGORIES: add a "HISTORY" button on each category that records that date when they were bought and or if there are any changes in one of the inputs(eg. location,unitcost,quantity)
+
+MAKE SURE ALL FUNCTIONS WORK AS THEY WERE EXPECTED TO BE

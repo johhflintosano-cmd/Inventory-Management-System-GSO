@@ -1,0 +1,32 @@
+
+Alright the changes for Registratio, Login, Inventory management, and Reciewing report to excel is great!!!
+
+BEFORE ACTION, STATE YOUR UNDERSTANDING AND LET ME CHECK PHASES and CHECKLIST ACTIONS FIRST AND I WILL SAY "PROCEED" if its good to go.
+Now ill be adding a new function, "RELEASED ORDER REPORT"
+
+CONTEXT: Since our client has a recieving of items report from an employee that bought in new items, the items get taken out from the ware house, when its finally goinf to be used-.
+so our client would love a release report where it also list all the items that will be taken including their details and estimated cost-
+
+so how this will work: 
+when the employee or admin searches through the items and clicks on them like saving an item in a shopping cart (the button to see the list of items picked will not look like a shopping cart but it will say "Items picked"
+while clicking on the said item it will show "How much quantity?" 
+they will insert how many wil be taken if the said number is within- 
+if too much was demanded more the available quantity show-> 
+IF EMPLOYEE "insufficient items, notify admin?" IF they CLICK approve and not deny- 
+then the notifaction that the items are not enough will be sent to admin in the notification interface.
+ IF ADMIN just say insificient items.
+
+Now after finsihing picking what they need they will click in the button "ITEMS PICKED" and will auto show all details like- (TEMPLATE WILL BE SHOWN LATER: note: "particulars" means "Items delivered" from the receiving input)
+and it will auto show the whole estimate of all items that will be taken out (IF EMPLOYEE-> NEED APPROVAL BEFORE ACCES TO GENERATE RELEASED ORDER REPORT just like the recieving input- admin can check or deny certain items or pick all. IF ADMIN- AUTO REDIRECT TO ACCESS RELEASED ORDER REPORT)
+THEN EXPORT ALL ITEMS LISTED and items will autofill details on the template given (make sure to check logic of the template and connect details as so)
+AND WHEN FINNALY HIT THE EXPORT BUTTON- make sure to to trigger REMOVE ITEMS FROM DB AND UPDATE FRONTEND AND UI IN ACCORDING TO THE CHNAGE. and just like the release repoort
+
+WHEN HIT GENERATE REPORT_ MAKE INTP A DONWLOADABLE EXCEL FILE WITH THE TEMPLATE AND ITEM DETAILS. AND RESET AFTER NEW SET OF ITEMS
+Ps. USE THE EXACT EXCEL TEMPLATE I GAVE YOU_ EXACT DETAILS AND EVEN EXCEL ORIENTATION AND DESIGNED IN THE FILE-
+ps. DO NOT REMOVE THE RECEIVING REPORT FUNCTION OR DONT EVEN REWRITE IT_ THIS IS MERELY AN ADDITION TO THE SYSTEM:
+
+IF BUTTON PICKED "REICEIVING REPORT" GO TO RELEASE REPORT ORIENTATION FILE
+IF BUTTON PICKED "RELEASED ORDER REPORT:" FO TO RELEASED ORDER REPORT ORIENTATION FILE- (IF EMPLOYEE AND THEY PICKED THIS BUTTON WITH NO APPORVAL YET- WHEN CLICKED SUBMIT REQUEST- BUT IF ALREADY APPROVED BY ADMIN- LET THEM ACCES GENERATE REPORT ADN FILE)
+
+(PS. NO need for approval per action IF ADMIN- auto access and auto direct to function)
+
